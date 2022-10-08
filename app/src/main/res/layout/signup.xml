@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/art2">
+
+    <ImageButton
+        android:id="@+id/supback"
+        android:layout_marginTop="10dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/back" />
+
+
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_width="350dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/br_singup">
+    <TextView
+        android:id="@+id/tvsu"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:text="Sign up"/>
+
+    <EditText
+        android:hint="Email"
+        android:id="@+id/tvmail"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/tvsu"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="40dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:hint="Phone number"
+        android:id="@+id/tvphone"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/tvmail"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="40dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:hint="Password"
+        android:id="@+id/tvpass"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/tvphone"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="40dp"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:hint="Retype password"
+        android:id="@+id/tvrepass"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/tvpass"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="40dp"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:hint="Create account"
+        android:textSize="25dp"
+        android:textColorHint="@color/white"
+        android:background="@drawable/bt_signup"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/tvrepass"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>
